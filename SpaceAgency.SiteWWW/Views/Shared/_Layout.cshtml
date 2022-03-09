@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SpaceAgency.SiteWWW</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="~/lib/materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+</head>
+<body>
+  <nav class="blue darken-3" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">EasySpaceSpeed</a>
+      <ul class="right hide-on-med-and-down">
+         <li>@Html.ActionLink("Main", "Index", "Home")</li>
+         <li>@Html.ActionLink("About", "About", "Home")</li>
+         <li>@Html.ActionLink("Join Us", "JoinUs", "Home")</li>
+         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Conquer The Universe</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Be our Pionier on distant planets rich in resources and opportunities</h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="~/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container grey lighten-1">
+    <div class="section">
+        @RenderBody()
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern Earth-eco way to obtain rare resources</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="~/background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container grey lighten-1">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Do you ever wonder what is beyond Sun System? Are you an engeenir? Maybe programmer or experinced miner? We need You for our mission! Contact us right now!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">The only chance for Green, Eco-friendly Earth without wars and mines bigger than cities</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="~/background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer blue darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Our partners in space conquer cooperation</h5>
+          <p class="grey-text text-lighten-4">Here is our best, trusted partners that provide us best resources and technology to make our goals real.</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3">Rafał Olejniczak</a>
+      </div>
+    </div>
+  </footer>
+    
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/js/materialize.js"></script>
+    <script src="/js/init.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

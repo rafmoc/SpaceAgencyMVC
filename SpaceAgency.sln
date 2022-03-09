@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceAgency.SiteWWW", "SpaceAgency.SiteWWW\SpaceAgency.SiteWWW.csproj", "{E13D0C15-69E1-4575-9B3B-CA4B91BEF5D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceAgency.Intranet", "SpaceAgency.Intranet\SpaceAgency.Intranet.csproj", "{099EAA82-6914-4C51-973C-A9F07C4C1EBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E13D0C15-69E1-4575-9B3B-CA4B91BEF5D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E13D0C15-69E1-4575-9B3B-CA4B91BEF5D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E13D0C15-69E1-4575-9B3B-CA4B91BEF5D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E13D0C15-69E1-4575-9B3B-CA4B91BEF5D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{099EAA82-6914-4C51-973C-A9F07C4C1EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{099EAA82-6914-4C51-973C-A9F07C4C1EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{099EAA82-6914-4C51-973C-A9F07C4C1EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{099EAA82-6914-4C51-973C-A9F07C4C1EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1B17D0C-4110-494D-9F03-1C6BF404C9A8}
+	EndGlobalSection
+EndGlobal
