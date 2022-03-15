@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceAgency.SiteWWW", "SpaceAgency.SiteWWW\SpaceAgency.SiteWWW.csproj", "{E13D0C15-69E1-4575-9B3B-CA4B91BEF5D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaceAgency.SiteWWW", "SpaceAgency.SiteWWW\SpaceAgency.SiteWWW.csproj", "{E13D0C15-69E1-4575-9B3B-CA4B91BEF5D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceAgency.Intranet", "SpaceAgency.Intranet\SpaceAgency.Intranet.csproj", "{099EAA82-6914-4C51-973C-A9F07C4C1EBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaceAgency.Intranet", "SpaceAgency.Intranet\SpaceAgency.Intranet.csproj", "{099EAA82-6914-4C51-973C-A9F07C4C1EBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceAgency.Data", "SpaceAgency.Data\SpaceAgency.Data.csproj", "{1BC6BE46-B29C-4AD1-B695-C02F5A508FD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{099EAA82-6914-4C51-973C-A9F07C4C1EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{099EAA82-6914-4C51-973C-A9F07C4C1EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{099EAA82-6914-4C51-973C-A9F07C4C1EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BC6BE46-B29C-4AD1-B695-C02F5A508FD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC6BE46-B29C-4AD1-B695-C02F5A508FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC6BE46-B29C-4AD1-B695-C02F5A508FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC6BE46-B29C-4AD1-B695-C02F5A508FD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

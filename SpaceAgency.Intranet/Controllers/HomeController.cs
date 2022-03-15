@@ -18,10 +18,19 @@ namespace SpaceAgency.Intranet.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Gliese_667Cc()
         {
             return View();
         }
+        public IActionResult Kepler_22B()
+        {
+            return View();
+        }
+        public IActionResult Kepler_69c()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

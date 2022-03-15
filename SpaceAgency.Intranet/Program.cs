@@ -1,4 +1,11 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using SpaceAgency.Data.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<SpaceAgencyContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SpaceAgencyContext")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

@@ -1,0 +1,146 @@
+﻿@{
+    ViewData["Title"] = "Gliese-667Cc";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+        <h1 class="display-1">Gliese-667Cc</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 grid-margin">
+        <div class="card">
+          <div class="card-body">
+            <h5>People on planet</h5>
+            <div class="row">
+              <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                <div class="d-flex d-sm-block d-md-flex align-items-center">
+                  <h2 class="mb-0">2</h2>
+                </div>
+              </div>
+              <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                <i class="icon-lg mdi mdi-human-greeting text-primary ml-auto"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 grid-margin">
+        <div class="card">
+          <div class="card-body">
+            <h5>Factory sites</h5>
+            <div class="row">
+              <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                <div class="d-flex d-sm-block d-md-flex align-items-center">
+                  <h2 class="mb-0">1</h2>
+                  <p class="text-success ml-2 mb-0 font-weight-medium">+1</p>
+                </div>
+              </div>
+              <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                <i class="icon-lg mdi mdi-factory text-danger ml-auto"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 grid-margin">
+        <div class="card">
+          <div class="card-body">
+            <h5>Mines</h5>
+            <div class="row">
+              <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                <div class="d-flex d-sm-block d-md-flex align-items-center">
+                  <h2 class="mb-0">1</h2>
+                  <p class="text-danger ml-2 mb-0 font-weight-medium">-1 </p>
+                </div>
+              </div>
+              <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                <i class="icon-lg mdi mdi-castle text-success ml-auto"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+            <h4 class="card-title">Income from Export</h4>
+            <canvas id="areaChart" style="height: 373px; display: block; width: 746px;" width="746" height="373" class="chartjs-render-monitor"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Satelites and Mining Outposts</h4>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th> Type </th>
+                    <th> Name </th>
+                    <th> Purpose </th>
+                    <th> Progress </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="mdi mdi-satellite-variant icon-md"></span>
+                    </td>
+                    <td> ScanLite-2 </td>
+                    <td> Scaning for iron depostis </td>
+                    <td>
+                      <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="mdi mdi-castle icon-md"></span>
+                    </td>
+                    <td> North Mine </td>
+                    <td> Coal and silver mining </td>
+                    <td>
+                      <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="mdi mdi-castle icon-md"></span>
+                    </td>
+                    <td> South Quarry </td>
+                    <td> Stone and gravel mining </td>
+                    <td>
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="mdi mdi-satellite-variant icon-md"></span>
+                    </td>
+                    <td> ScanLite-1 </td>
+                    <td> Scaning for stone depostis </td>
+                    <td>
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
