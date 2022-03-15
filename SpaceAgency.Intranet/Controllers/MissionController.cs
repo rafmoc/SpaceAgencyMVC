@@ -24,7 +24,11 @@ namespace SpaceAgency.Intranet.Controllers
         // GET: Mission
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Mission.ToListAsync());
+            var model = new MissionViewModel()
+            {
+                Missions = await _context.Mission.ToListAsync()
+            };
+            return View(model);
         }
 
         // GET: Mission/Details/5
@@ -135,6 +139,8 @@ namespace SpaceAgency.Intranet.Controllers
 
             return View(mission);
         }*/
+
+        [ActionName("Delete")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id is null)
@@ -143,7 +149,7 @@ namespace SpaceAgency.Intranet.Controllers
             }
             var model = new MissionViewModel();
             var mission = await _context.Mission.FindAsync(id);
-            model.mission = mission;
+            model.Mission = mission;
 
             return PartialView(model);
         }
@@ -153,7 +159,7 @@ namespace SpaceAgency.Intranet.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var mission = await _context.Mission.FindAsync(id);
+            var mission = _context.Mission.FirstOrDefault(m => m.IdMission == id);
             _context.Mission.Remove(mission);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

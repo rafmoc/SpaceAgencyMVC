@@ -9,6 +9,6 @@ function Action(id, controller, action) {
         type: "GET",
         data: { id: id }
     }).done(function (partialViewResult) {
-        $("#partialC").html(partialViewResult);
+        $("#partialView").html(partialViewResult);
     })
 };

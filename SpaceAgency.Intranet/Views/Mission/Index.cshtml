@@ -1,66 +1,15 @@
-﻿@model IEnumerable<SpaceAgency.Data.Data.CMS.Mission>
+﻿@model SpaceAgency.Intranet.ViewModels.MissionViewModel
 
 @{
     ViewData["Title"] = "Index";
 }
 <div class="content-wrapper">
-<div class="row">
-  <div class="col-lg-6 grid-margin stretch-card">
-    <div class="card">
-      <div class="card-body">
-        <h1 class="card-title">Missions</h1>
-        <a asp-action="Create"> <button type="button" class="btn btn-inverse-primary btn-fw">Create New</button> </a>
-        <div class="table-responsive">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Name)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Destination)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Type)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Status)
-                        </th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-            @foreach (var item in Model) {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Name)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Destination)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Type)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Status)
-                        </td>
-                        <td>
-                            <a asp-action="Details" class="mdi mdi-information" asp-route-id="@item.IdMission"></a> |
-                            <a asp-action="Edit" class="mdi mdi-table-edit" asp-route-id="@item.IdMission"></a> |
-                            <a asp-action="Delete" class="mdi mdi-delete-forever" onclick="Action(@item.IdMission,'MissionController','Delete')"></a>
-                        </td>
-                    </tr>
-            }
-                </tbody>
-            </table>
-        </div>
-      </div>
-    </div>
+  <div>
+      @await Html.PartialAsync("MissionA", Model)
   </div>
 
-  <div class="col-lg-6 grid-margin stretch-card">
-      
+  <div class="card">
+      @await Html.PartialAsync("MissionB")
   </div>
 </div>
 
-</div>

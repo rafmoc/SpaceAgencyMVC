@@ -5,6 +5,7 @@ namespace SpaceAgency.Intranet.ViewModels
 {
     public class MissionViewModel
     {
-        public Mission mission;
+        public IEnumerable<Mission> Missions { get; set; }
+        public Mission Mission { get; set; }
     }
 }
