@@ -1,15 +1,70 @@
-﻿@model SpaceAgency.Intranet.ViewModels.MissionViewModel
+﻿@model SpaceAgency.Intranet.TwoViews.TwoViewsAtOnce
 
 @{
     ViewData["Title"] = "Index";
 }
 <div class="content-wrapper">
-  <div>
-      @await Html.PartialAsync("MissionA", Model)
-  </div>
+  <div class="row">
 
-  <div class="card">
-      @await Html.PartialAsync("MissionB")
+    <div class="col-lg-8 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="card-title">Missions</h1>
+          <button type="button" onclick="Action(0,'Mission','Create')" class="btn btn-inverse-primary btn-fw">Create New</button>
+          <div class="table-responsive">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th>
+                              @Html.DisplayNameFor(model => model.Mission.Name)
+                          </th>
+                          <th>
+                              @Html.DisplayNameFor(model => model.Mission.Destination)
+                          </th>
+                          <th>
+                              @Html.DisplayNameFor(model => model.Mission.Type)
+                          </th>
+                          <th>
+                              @Html.DisplayNameFor(model => model.Mission.Status)
+                          </th>
+                          <th></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+              @foreach (var item in Model.Missions) {
+                      <tr>
+                          <td>
+                              @Html.DisplayFor(modelItem => item.Name)
+                          </td>
+                          <td>
+                              @Html.DisplayFor(modelItem => item.Destination)
+                          </td>
+                          <td>
+                              @Html.DisplayFor(modelItem => item.Type)
+                          </td>
+                          <td>
+                              @Html.DisplayFor(modelItem => item.Status)
+                          </td>
+                          <td>
+                              <a class="mdi mdi-information" onclick="Action(@item.IdMission,'Mission','Details')"></a> |
+                              <a class="mdi mdi-table-edit" onclick="Action(@item.IdMission,'Mission','Edit')"></a> |
+                              <a class="mdi mdi-delete-forever" onclick="Action(@item.IdMission,'Mission','Delete')"></a>
+                          </td>
+                      </tr>
+              }
+                  </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 grid-margin stretch-card">
+      <div id="partialView">
+
+      </div>
+    </div>
+
   </div>
 </div>
 

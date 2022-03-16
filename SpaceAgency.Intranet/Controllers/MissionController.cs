@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SpaceAgency.Data.Data;
 using SpaceAgency.Data.Data.CMS;
-using SpaceAgency.Intranet.ViewModels;
+using SpaceAgency.Intranet.TwoViews;
 
 namespace SpaceAgency.Intranet.Controllers
 {
@@ -24,14 +24,14 @@ namespace SpaceAgency.Intranet.Controllers
         // GET: Mission
         public async Task<IActionResult> Index()
         {
-            var model = new MissionViewModel()
+            var model = new TwoViewsAtOnce()
             {
                 Missions = await _context.Mission.ToListAsync()
             };
             return View(model);
         }
 
-        // GET: Mission/Details/5
+        /*// GET: Mission/Details/5                 ///"Mrówkowa" wersja Details
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -47,12 +47,25 @@ namespace SpaceAgency.Intranet.Controllers
             }
 
             return View(mission);
+        }*/
+
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id is null)
+            {
+                return PartialView();
+            }
+            var model = new TwoViewsAtOnce();
+            var mission = await _context.Mission.FindAsync(id);
+            model.Mission = mission;
+
+            return PartialView(model);
         }
 
         // GET: Mission/Create
         public IActionResult Create()
         {
-            return View();
+            return PartialView();
         }
 
         // POST: Mission/Create
@@ -71,7 +84,7 @@ namespace SpaceAgency.Intranet.Controllers
             return View(mission);
         }
 
-        // GET: Mission/Edit/5
+        /*// GET: Mission/Edit/5                 ///"Mrówkowa" wersja Edit
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -85,6 +98,19 @@ namespace SpaceAgency.Intranet.Controllers
                 return NotFound();
             }
             return View(mission);
+        }*/
+
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id is null)
+            {
+                return PartialView();
+            }
+            var model = new TwoViewsAtOnce();
+            var mission = await _context.Mission.FindAsync(id);
+            model.Mission = mission;
+
+            return PartialView(model);
         }
 
         // POST: Mission/Edit/5
@@ -122,7 +148,7 @@ namespace SpaceAgency.Intranet.Controllers
             return View(mission);
         }
 
-        // GET: Mission/Delete/5
+        // GET: Mission/Delete/5                 ///"Mrówkowa" wersja Delete
         /*public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -140,14 +166,13 @@ namespace SpaceAgency.Intranet.Controllers
             return View(mission);
         }*/
 
-        [ActionName("Delete")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id is null)
             {
                 return PartialView();
             }
-            var model = new MissionViewModel();
+            var model = new TwoViewsAtOnce();
             var mission = await _context.Mission.FindAsync(id);
             model.Mission = mission;
 
@@ -159,7 +184,7 @@ namespace SpaceAgency.Intranet.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var mission = _context.Mission.FirstOrDefault(m => m.IdMission == id);
+            var mission = await _context.Mission.FindAsync(id);
             _context.Mission.Remove(mission);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

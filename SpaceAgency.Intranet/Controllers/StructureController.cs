@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SpaceAgency.Data.Data;
 using SpaceAgency.Data.Data.CMS;
+using SpaceAgency.Intranet.TwoViews;
 
 namespace SpaceAgency.Intranet.Controllers
 {
@@ -23,31 +24,31 @@ namespace SpaceAgency.Intranet.Controllers
         // GET: Structure
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Structure.ToListAsync());
+            var model = new TwoViewsAtOnce()
+            {
+                Structures = await _context.Structure.ToListAsync()
+            };
+            return View(model);
         }
 
         // GET: Structure/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (id is null)
             {
-                return NotFound();
+                return PartialView();
             }
+            var model = new TwoViewsAtOnce();
+            var Structure = await _context.Structure.FindAsync(id);
+            model.Structure = Structure;
 
-            var structure = await _context.Structure
-                .FirstOrDefaultAsync(m => m.IdStructure == id);
-            if (structure == null)
-            {
-                return NotFound();
-            }
-
-            return View(structure);
+            return PartialView(model);
         }
 
         // GET: Structure/Create
         public IActionResult Create()
         {
-            return View();
+            return PartialView();
         }
 
         // POST: Structure/Create
@@ -55,31 +56,28 @@ namespace SpaceAgency.Intranet.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdStructure,Name,Type,Planet,Latitude,Longitude,Status")] Structure structure)
+        public async Task<IActionResult> Create([Bind("IdStructure,Name,Type,Planet,Latitude,Longitude,Status")] Structure Structure)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(structure);
+                _context.Add(Structure);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(structure);
+            return View(Structure);
         }
 
-        // GET: Structure/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            if (id is null)
             {
-                return NotFound();
+                return PartialView();
             }
+            var model = new TwoViewsAtOnce();
+            var Structure = await _context.Structure.FindAsync(id);
+            model.Structure = Structure;
 
-            var structure = await _context.Structure.FindAsync(id);
-            if (structure == null)
-            {
-                return NotFound();
-            }
-            return View(structure);
+            return PartialView(model);
         }
 
         // POST: Structure/Edit/5
@@ -87,9 +85,9 @@ namespace SpaceAgency.Intranet.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdStructure,Name,Type,Planet,Latitude,Longitude,Status")] Structure structure)
+        public async Task<IActionResult> Edit(int id, [Bind("IdStructure,Name,Destination,Type,Status")] Structure Structure)
         {
-            if (id != structure.IdStructure)
+            if (id != Structure.IdStructure)
             {
                 return NotFound();
             }
@@ -98,12 +96,12 @@ namespace SpaceAgency.Intranet.Controllers
             {
                 try
                 {
-                    _context.Update(structure);
+                    _context.Update(Structure);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!StructureExists(structure.IdStructure))
+                    if (!StructureExists(Structure.IdStructure))
                     {
                         return NotFound();
                     }
@@ -114,25 +112,21 @@ namespace SpaceAgency.Intranet.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(structure);
+            return View(Structure);
         }
 
         // GET: Structure/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (id is null)
             {
-                return NotFound();
+                return PartialView();
             }
+            var model = new TwoViewsAtOnce();
+            var Structure = await _context.Structure.FindAsync(id);
+            model.Structure = Structure;
 
-            var structure = await _context.Structure
-                .FirstOrDefaultAsync(m => m.IdStructure == id);
-            if (structure == null)
-            {
-                return NotFound();
-            }
-
-            return View(structure);
+            return PartialView(model);
         }
 
         // POST: Structure/Delete/5
@@ -140,8 +134,8 @@ namespace SpaceAgency.Intranet.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var structure = await _context.Structure.FindAsync(id);
-            _context.Structure.Remove(structure);
+            var Structure = await _context.Structure.FindAsync(id);
+            _context.Structure.Remove(Structure);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
