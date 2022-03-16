@@ -85,7 +85,7 @@ namespace SpaceAgency.Intranet.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdPioneer,Name,Destination,Type,Status")] Pioneer Pioneer)
+        public async Task<IActionResult> Edit(int id, [Bind("IdPioneer,Name,SurName,Status,CurrentPlanet")] Pioneer Pioneer)
         {
             if (id != Pioneer.IdPioneer)
             {
