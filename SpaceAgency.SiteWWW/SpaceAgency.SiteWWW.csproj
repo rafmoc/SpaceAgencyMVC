@@ -10,4 +10,8 @@
     <None Include="wwwroot\background1.jpg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SpaceAgency.Data\SpaceAgency.Data.csproj" />
+  </ItemGroup>
+
 </Project>

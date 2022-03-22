@@ -81,7 +81,7 @@ namespace SpaceAgency.Intranet.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(mission);
+            return RedirectToAction(nameof(Index));
         }
 
         /*// GET: Mission/Edit/5                 ///"Mrówkowa" wersja Edit
@@ -145,7 +145,7 @@ namespace SpaceAgency.Intranet.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(mission);
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Mission/Delete/5                 ///"Mrówkowa" wersja Delete

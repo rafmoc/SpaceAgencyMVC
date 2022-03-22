@@ -64,7 +64,7 @@ namespace SpaceAgency.Intranet.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(Structure);
+            return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> Edit(int? id)
@@ -112,7 +112,7 @@ namespace SpaceAgency.Intranet.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(Structure);
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Structure/Delete/5

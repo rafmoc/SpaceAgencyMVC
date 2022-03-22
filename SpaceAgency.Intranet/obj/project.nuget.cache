@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "U716RiGEc1whaqZu0Ot3/OOhvr7Nkw659zWqcJcm/dXS8lCN938CfEcCuOQdkieb6v5cOD/szTGY04BlG2qlcg==",
+  "dgSpecHash": "DvZVbXQA7b/DxDU+khnfmmY/iNtwrWvjmqo6xH3DiSMkv055rTJ65UlUzdeOwo+C2S4/qa/1yEskkh2V7d8cUw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.Intranet\\SpaceAgency.Intranet.csproj",
   "expectedPackageFiles": [
@@ -33,9 +33,9 @@
     "C:\\Users\\Rafmoc\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Rafmoc\\.nuget\\packages\\microsoft.diasymreader\\1.3.0\\microsoft.diasymreader.1.3.0.nupkg.sha512",
     "C:\\Users\\Rafmoc\\.nuget\\packages\\microsoft.dotnet.scaffolding.shared\\6.0.2\\microsoft.dotnet.scaffolding.shared.6.0.2.nupkg.sha512",
-    "C:\\Users\\Rafmoc\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
-    "C:\\Users\\Rafmoc\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.3\\microsoft.entityframeworkcore.abstractions.6.0.3.nupkg.sha512",
-    "C:\\Users\\Rafmoc\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.3\\microsoft.entityframeworkcore.analyzers.6.0.3.nupkg.sha512",
+    "C:\\Users\\Rafmoc\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.2\\microsoft.entityframeworkcore.6.0.2.nupkg.sha512",
+    "C:\\Users\\Rafmoc\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.2\\microsoft.entityframeworkcore.abstractions.6.0.2.nupkg.sha512",
+    "C:\\Users\\Rafmoc\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.2\\microsoft.entityframeworkcore.analyzers.6.0.2.nupkg.sha512",
     "C:\\Users\\Rafmoc\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.2\\microsoft.entityframeworkcore.design.6.0.2.nupkg.sha512",
     "C:\\Users\\Rafmoc\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.2\\microsoft.entityframeworkcore.relational.6.0.2.nupkg.sha512",
     "C:\\Users\\Rafmoc\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.2\\microsoft.entityframeworkcore.sqlserver.6.0.2.nupkg.sha512",
