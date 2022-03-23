@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SpaceAgency.Data.Data;
 using SpaceAgency.SiteWWW.Models;
 using System.Diagnostics;
 
@@ -7,15 +8,28 @@ namespace SpaceAgency.SiteWWW.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly SpaceAgencyContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(SpaceAgencyContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int? id)
         {
-            return View();
+            ViewBag.ModelPages =
+                (
+                    from page in _context.Page
+                    select page
+                ).ToList();
+
+            if (id == null)
+            {
+                id = _context.Page.First().IdPage;
+            }
+            var item = _context.Page.Find(id);
+
+            return View(item);
         }
 
         public IActionResult About()

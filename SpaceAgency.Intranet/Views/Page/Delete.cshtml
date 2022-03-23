@@ -1,0 +1,46 @@
+﻿@model SpaceAgency.Intranet.TwoViews.TwoViewsAtOnce
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<div class="card">
+    <div class="card-body">
+
+        <h1>Delete</h1>
+
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+            <h4>Mission</h4>
+            <dl class="row">
+                <dt class = "col-sm-4">
+                    @Html.DisplayNameFor(model => model.Page.Title)
+                </dt>
+                <dd class = "col-sm-8">
+                    @Html.DisplayFor(model => model.Page.Title)
+                </dd>
+                <dt class = "col-sm-4">
+                    @Html.DisplayNameFor(model => model.Page.Header)
+                </dt>
+                <dd class = "col-sm-8">
+                    @Html.DisplayFor(model => model.Page.Header)
+                </dd>
+                <dt class = "col-sm-4">
+                    @Html.DisplayNameFor(model => model.Page.TopContent)
+                </dt>
+                <dd class = "col-sm-8">
+                    @Html.DisplayFor(model => model.Page.TopContent)
+                </dd>
+                <dt class = "col-sm-4">
+                    @Html.DisplayNameFor(model => model.Page.BotContent)
+                </dt>
+                <dd class = "col-sm-8">
+                    @Html.DisplayFor(model => model.Page.BotContent)
+                </dd>
+            </dl>
+    
+            <form asp-action="Delete" asp-route-id="@Model.Page.IdPage">
+                <input type="submit" value="Delete" class="btn btn-danger" />
+            </form>  
+        </div>
+    </div>
+</div>

@@ -16,9 +16,9 @@ namespace SpaceAgency.Data.Data
         {
         }
 
-        public DbSet<Pioneer> Pioneer { get; set; }
+        public DbSet<Page> Page { get; set; }
 
-        public DbSet<Mission> Mission { get; set; }
+        public DbSet<Pioneer> Pioneer { get; set; }
 
         public DbSet<Structure> Structure { get; set; }
 

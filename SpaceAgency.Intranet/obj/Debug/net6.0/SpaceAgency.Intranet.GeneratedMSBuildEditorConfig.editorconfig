@@ -31,24 +31,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxLZXBsZXJfNjljLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Mission/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxDcmVhdGUuY3NodG1s
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Page/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Mission/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxEZWxldGUuY3NodG1s
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Page/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Mission/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxEZXRhaWxzLmNzaHRtbA==
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Page/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Mission/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxFZGl0LmNzaHRtbA==
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Page/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Mission/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxJbmRleC5jc2h0bWw=
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Page/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Pioneer/Create.cshtml]

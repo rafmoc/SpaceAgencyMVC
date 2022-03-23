@@ -21,33 +21,33 @@ namespace SpaceAgency.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("SpaceAgency.Data.Data.CMS.Mission", b =>
+            modelBuilder.Entity("SpaceAgency.Data.Data.CMS.Page", b =>
                 {
-                    b.Property<int>("IdMission")
+                    b.Property<int>("IdPage")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdMission"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPage"), 1L, 1);
 
-                    b.Property<string>("Destination")
+                    b.Property<string>("BotContent")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Header")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Status")
+                    b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Type")
+                    b.Property<string>("TopContent")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("IdMission");
+                    b.HasKey("IdPage");
 
-                    b.ToTable("Mission");
+                    b.ToTable("Page");
                 });
 
             modelBuilder.Entity("SpaceAgency.Data.Data.CMS.Pioneer", b =>
