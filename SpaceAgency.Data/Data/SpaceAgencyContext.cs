@@ -20,7 +20,7 @@ namespace SpaceAgency.Data.Data
 
         public DbSet<Pioneer> Pioneer { get; set; }
 
-        public DbSet<Structure> Structure { get; set; }
+        public DbSet<MainContent> MainContent { get; set; }
 
         public DbSet<Engine> Engine { get; set; }
 

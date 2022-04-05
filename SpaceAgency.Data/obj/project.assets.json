@@ -1768,19 +1768,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rafmoc\\.nuget\\packages\\": {}
+    "C:\\Users\\asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.Data\\SpaceAgency.Data.csproj",
+      "projectUniqueName": "C:\\Users\\asus\\Desktop\\Studia\\SpaceAgency\\SpaceAgency.Data\\SpaceAgency.Data.csproj",
       "projectName": "SpaceAgency.Data",
-      "projectPath": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.Data\\SpaceAgency.Data.csproj",
-      "packagesPath": "C:\\Users\\Rafmoc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.Data\\obj\\",
+      "projectPath": "C:\\Users\\asus\\Desktop\\Studia\\SpaceAgency\\SpaceAgency.Data\\SpaceAgency.Data.csproj",
+      "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\asus\\Desktop\\Studia\\SpaceAgency\\SpaceAgency.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rafmoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

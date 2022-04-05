@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\SpaceAgency.SiteWWW.csproj": {}
+    "C:\\Users\\asus\\Desktop\\Studia\\SpaceAgency\\SpaceAgency.SiteWWW\\SpaceAgency.SiteWWW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.Data\\SpaceAgency.Data.csproj": {
+    "C:\\Users\\asus\\Desktop\\Studia\\SpaceAgency\\SpaceAgency.Data\\SpaceAgency.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.Data\\SpaceAgency.Data.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\Desktop\\Studia\\SpaceAgency\\SpaceAgency.Data\\SpaceAgency.Data.csproj",
         "projectName": "SpaceAgency.Data",
-        "projectPath": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.Data\\SpaceAgency.Data.csproj",
-        "packagesPath": "C:\\Users\\Rafmoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.Data\\obj\\",
+        "projectPath": "C:\\Users\\asus\\Desktop\\Studia\\SpaceAgency\\SpaceAgency.Data\\SpaceAgency.Data.csproj",
+        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asus\\Desktop\\Studia\\SpaceAgency\\SpaceAgency.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rafmoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,17 +72,17 @@
         }
       }
     },
-    "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\SpaceAgency.SiteWWW.csproj": {
+    "C:\\Users\\asus\\Desktop\\Studia\\SpaceAgency\\SpaceAgency.SiteWWW\\SpaceAgency.SiteWWW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\SpaceAgency.SiteWWW.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\Desktop\\Studia\\SpaceAgency\\SpaceAgency.SiteWWW\\SpaceAgency.SiteWWW.csproj",
         "projectName": "SpaceAgency.SiteWWW",
-        "projectPath": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\SpaceAgency.SiteWWW.csproj",
-        "packagesPath": "C:\\Users\\Rafmoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\obj\\",
+        "projectPath": "C:\\Users\\asus\\Desktop\\Studia\\SpaceAgency\\SpaceAgency.SiteWWW\\SpaceAgency.SiteWWW.csproj",
+        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asus\\Desktop\\Studia\\SpaceAgency\\SpaceAgency.SiteWWW\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rafmoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,8 +96,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.Data\\SpaceAgency.Data.csproj": {
-                "projectPath": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.Data\\SpaceAgency.Data.csproj"
+              "C:\\Users\\asus\\Desktop\\Studia\\SpaceAgency\\SpaceAgency.Data\\SpaceAgency.Data.csproj": {
+                "projectPath": "C:\\Users\\asus\\Desktop\\Studia\\SpaceAgency\\SpaceAgency.Data\\SpaceAgency.Data.csproj"
               }
             }
           }

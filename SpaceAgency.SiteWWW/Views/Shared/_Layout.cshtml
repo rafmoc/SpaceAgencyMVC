@@ -32,10 +32,11 @@
     <div class="parallax"><img src="~/background1.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
+  @RenderBody()
 
   <div class="container grey lighten-1">
     <div class="section">
-        @RenderBody()
+        @await Html.PartialAsync("MainContent",(IEnumerable<SpaceAgency.Data.Data.CMS.MainContent>)ViewBag.ModelMainContent)
     </div>
   </div>
 

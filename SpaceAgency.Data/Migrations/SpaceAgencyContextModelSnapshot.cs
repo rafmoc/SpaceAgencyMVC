@@ -21,6 +21,31 @@ namespace SpaceAgency.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("SpaceAgency.Data.Data.CMS.MainContent", b =>
+                {
+                    b.Property<int>("IdMainContent")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdMainContent"), 1L, 1);
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Header")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Icon")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdMainContent");
+
+                    b.ToTable("MainContent");
+                });
+
             modelBuilder.Entity("SpaceAgency.Data.Data.CMS.Page", b =>
                 {
                     b.Property<int>("IdPage")
@@ -77,43 +102,6 @@ namespace SpaceAgency.Data.Migrations
                     b.HasKey("IdPioneer");
 
                     b.ToTable("Pioneer");
-                });
-
-            modelBuilder.Entity("SpaceAgency.Data.Data.CMS.Structure", b =>
-                {
-                    b.Property<int>("IdStructure")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdStructure"), 1L, 1);
-
-                    b.Property<string>("Latitude")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Longitude")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Planet")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("IdStructure");
-
-                    b.ToTable("Structure");
                 });
 
             modelBuilder.Entity("SpaceAgency.Data.Data.Rockets.Engine", b =>

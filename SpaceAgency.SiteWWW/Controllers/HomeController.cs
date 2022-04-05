@@ -23,6 +23,12 @@ namespace SpaceAgency.SiteWWW.Controllers
                     select page
                 ).ToList();
 
+            ViewBag.ModelMainContent =
+                (
+                    from mainContent in _context.MainContent
+                    select mainContent
+                ).ToList();
+
             if (id == null)
             {
                 id = _context.Page.First().IdPage;

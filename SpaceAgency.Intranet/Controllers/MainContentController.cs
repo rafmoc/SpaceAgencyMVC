@@ -12,11 +12,11 @@ using SpaceAgency.Intranet.TwoViews;
 
 namespace SpaceAgency.Intranet.Controllers
 {
-    public class StructureController : Controller
+    public class MainContentController : Controller
     {
         private readonly SpaceAgencyContext _context;
 
-        public StructureController(SpaceAgencyContext context)
+        public MainContentController(SpaceAgencyContext context)
         {
             _context = context;
         }
@@ -26,7 +26,7 @@ namespace SpaceAgency.Intranet.Controllers
         {
             var model = new TwoViewsAtOnce()
             {
-                Structures = await _context.Structure.ToListAsync()
+                MainContents = await _context.MainContent.ToListAsync()
             };
             return View(model);
         }
@@ -39,8 +39,8 @@ namespace SpaceAgency.Intranet.Controllers
                 return PartialView();
             }
             var model = new TwoViewsAtOnce();
-            var Structure = await _context.Structure.FindAsync(id);
-            model.Structure = Structure;
+            var MainContent = await _context.MainContent.FindAsync(id);
+            model.MainContent = MainContent;
 
             return PartialView(model);
         }
@@ -56,11 +56,11 @@ namespace SpaceAgency.Intranet.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdStructure,Name,Type,Planet,Latitude,Longitude,Status")] Structure Structure)
+        public async Task<IActionResult> Create([Bind("IdMainContent,Icon,Header,Content")] MainContent mainContent)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(Structure);
+                _context.Add(mainContent);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -74,8 +74,8 @@ namespace SpaceAgency.Intranet.Controllers
                 return PartialView();
             }
             var model = new TwoViewsAtOnce();
-            var Structure = await _context.Structure.FindAsync(id);
-            model.Structure = Structure;
+            var MainContent = await _context.MainContent.FindAsync(id);
+            model.MainContent = MainContent;
 
             return PartialView(model);
         }
@@ -85,9 +85,9 @@ namespace SpaceAgency.Intranet.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdStructure,Name,Destination,Type,Status")] Structure Structure)
+        public async Task<IActionResult> Edit(int id, [Bind("IdMainContent,Icon,Header,Content")] MainContent mainContent)
         {
-            if (id != Structure.IdStructure)
+            if (id != mainContent.IdMainContent)
             {
                 return NotFound();
             }
@@ -96,12 +96,12 @@ namespace SpaceAgency.Intranet.Controllers
             {
                 try
                 {
-                    _context.Update(Structure);
+                    _context.Update(mainContent);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!StructureExists(Structure.IdStructure))
+                    if (!MainContentExists(mainContent.IdMainContent))
                     {
                         return NotFound();
                     }
@@ -123,8 +123,8 @@ namespace SpaceAgency.Intranet.Controllers
                 return PartialView();
             }
             var model = new TwoViewsAtOnce();
-            var Structure = await _context.Structure.FindAsync(id);
-            model.Structure = Structure;
+            var MainContent = await _context.MainContent.FindAsync(id);
+            model.MainContent = MainContent;
 
             return PartialView(model);
         }
@@ -134,15 +134,15 @@ namespace SpaceAgency.Intranet.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var Structure = await _context.Structure.FindAsync(id);
-            _context.Structure.Remove(Structure);
+            var MainContent = await _context.MainContent.FindAsync(id);
+            _context.MainContent.Remove(MainContent);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool StructureExists(int id)
+        private bool MainContentExists(int id)
         {
-            return _context.Structure.Any(e => e.IdStructure == id);
+            return _context.MainContent.Any(e => e.IdMainContent == id);
         }
     }
 }

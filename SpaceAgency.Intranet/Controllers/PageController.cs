@@ -134,7 +134,7 @@ namespace SpaceAgency.Intranet.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!pageExists(page.IdPage))
+                    if (!PageExists(page.IdPage))
                     {
                         return NotFound();
                     }
@@ -190,7 +190,7 @@ namespace SpaceAgency.Intranet.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool pageExists(int id)
+        private bool PageExists(int id)
         {
             return _context.Page.Any(e => e.IdPage == id);
         }

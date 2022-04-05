@@ -9,6 +9,21 @@ namespace SpaceAgency.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "MainContent",
+                columns: table => new
+                {
+                    IdMainContent = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Icon = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Header = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Content = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MainContent", x => x.IdMainContent);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Page",
                 columns: table => new
                 {
@@ -57,24 +72,6 @@ namespace SpaceAgency.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Structure",
-                columns: table => new
-                {
-                    IdStructure = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Planet = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Latitude = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Longitude = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Structure", x => x.IdStructure);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Engine",
                 columns: table => new
                 {
@@ -110,13 +107,13 @@ namespace SpaceAgency.Data.Migrations
                 name: "Engine");
 
             migrationBuilder.DropTable(
+                name: "MainContent");
+
+            migrationBuilder.DropTable(
                 name: "Page");
 
             migrationBuilder.DropTable(
                 name: "Pioneer");
-
-            migrationBuilder.DropTable(
-                name: "Structure");
 
             migrationBuilder.DropTable(
                 name: "Rocket");

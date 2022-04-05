@@ -9,7 +9,7 @@ namespace SpaceAgency.Intranet.TwoViews
         public Page Page { get; set; }
         public IEnumerable<Pioneer> Pioneers { get; set; }
         public Pioneer Pioneer { get; set; }
-        public IEnumerable<Structure> Structures { get; set; }
-        public Structure Structure { get; set; }
+        public IEnumerable<MainContent> MainContents { get; set; }
+        public MainContent MainContent { get; set; }
     }
 }
