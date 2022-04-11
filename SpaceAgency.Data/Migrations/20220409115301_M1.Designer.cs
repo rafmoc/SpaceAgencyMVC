@@ -11,7 +11,7 @@ using SpaceAgency.Data.Data;
 namespace SpaceAgency.Data.Migrations
 {
     [DbContext(typeof(SpaceAgencyContext))]
-    [Migration("20220325153902_M1")]
+    [Migration("20220409115301_M1")]
     partial class M1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
