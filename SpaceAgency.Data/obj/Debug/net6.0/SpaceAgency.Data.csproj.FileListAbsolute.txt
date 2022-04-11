@@ -10,3 +10,15 @@ C:\Users\Rafmoc\Desktop\SpaceAgencyMVC\SpaceAgencyMVC\SpaceAgency.Data\obj\Debug
 C:\Users\Rafmoc\Desktop\SpaceAgencyMVC\SpaceAgencyMVC\SpaceAgency.Data\obj\Debug\net6.0\refint\SpaceAgency.Data.dll
 C:\Users\Rafmoc\Desktop\SpaceAgencyMVC\SpaceAgencyMVC\SpaceAgency.Data\obj\Debug\net6.0\SpaceAgency.Data.pdb
 C:\Users\Rafmoc\Desktop\SpaceAgencyMVC\SpaceAgencyMVC\SpaceAgency.Data\obj\Debug\net6.0\ref\SpaceAgency.Data.dll
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.Data\bin\Debug\net6.0\SpaceAgency.Data.deps.json
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.Data\bin\Debug\net6.0\SpaceAgency.Data.dll
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.Data\bin\Debug\net6.0\SpaceAgency.Data.pdb
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.Data\obj\Debug\net6.0\SpaceAgency.Data.csproj.AssemblyReference.cache
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.Data\obj\Debug\net6.0\SpaceAgency.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.Data\obj\Debug\net6.0\SpaceAgency.Data.AssemblyInfoInputs.cache
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.Data\obj\Debug\net6.0\SpaceAgency.Data.AssemblyInfo.cs
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.Data\obj\Debug\net6.0\SpaceAgency.Data.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.Data\obj\Debug\net6.0\SpaceAgency.Data.dll
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.Data\obj\Debug\net6.0\refint\SpaceAgency.Data.dll
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.Data\obj\Debug\net6.0\SpaceAgency.Data.pdb
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.Data\obj\Debug\net6.0\ref\SpaceAgency.Data.dll

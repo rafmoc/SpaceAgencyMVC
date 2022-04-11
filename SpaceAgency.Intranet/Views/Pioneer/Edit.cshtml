@@ -1,47 +1,44 @@
-﻿@model SpaceAgency.Data.Data.CMS.Pioneer
+﻿@model SpaceAgency.Intranet.TwoViews.TwoViewsAtOnce
 
 @{
     ViewData["Title"] = "Edit";
 }
+<div class="card">
+    <div class="card-body">
 
-<h1>Edit</h1>
+        <h1>Edit</h1>
 
-<h4>Pioneer</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
+        <h4>Pioneer</h4>
+
+        <form asp-action="Edit" asp-route-id="@Model.Pioneer.IdPioneer">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdPioneer" />
+            <input type="hidden" asp-for="Pioneer.IdPioneer" />
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <label asp-for="Pioneer.Name" class="control-label"></label>
+                <input asp-for="Pioneer.Name" class="form-control" />
+                <span asp-validation-for="Pioneer.Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SurName" class="control-label"></label>
-                <input asp-for="SurName" class="form-control" />
-                <span asp-validation-for="SurName" class="text-danger"></span>
+                <label asp-for="Pioneer.SurName" class="control-label"></label>
+                <input asp-for="Pioneer.SurName" class="form-control" />
+                <span asp-validation-for="Pioneer.SurName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
-                <span asp-validation-for="Status" class="text-danger"></span>
+                <label asp-for="Pioneer.Status" class="control-label"></label>
+                <input asp-for="Pioneer.Status" class="form-control" />
+                <span asp-validation-for="Pioneer.Status" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CurrentPlanet" class="control-label"></label>
-                <input asp-for="CurrentPlanet" class="form-control" />
-                <span asp-validation-for="CurrentPlanet" class="text-danger"></span>
+                <label asp-for="Pioneer.CurrentPlanet" class="control-label"></label>
+                <input asp-for="Pioneer.CurrentPlanet" class="form-control" />
+                <span asp-validation-for="Pioneer.CurrentPlanet" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
-    </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+    </div>
 </div>
 
 @section Scripts {

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<SpaceAgency.Data.Data.CMS.MainContent>
+
+<!--Ikony - settings, group, flash_on-->
+
+ <div class="section">
+
+      <div class="row">
+          @foreach(var item in Model)
+          {
+              <div class="col s12 m4">
+                <div class="icon-block">
+                  <h2 class="center brown-text"><i class="material-icons">@item.Icon</i></h2>
+                  <h5 class="center">@item.Header</h5>
+
+                  <p class="light">@item.Content</p>
+                </div>
+              </div>
+          }
+        
+
+      </div>
+
+ </div>

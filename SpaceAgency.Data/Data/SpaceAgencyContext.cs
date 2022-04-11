@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SpaceAgency.Data.Data.CMS;
+using SpaceAgency.Data.Data.Rockets;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,10 +16,14 @@ namespace SpaceAgency.Data.Data
         {
         }
 
+        public DbSet<Page> Page { get; set; }
+
         public DbSet<Pioneer> Pioneer { get; set; }
 
-        public DbSet<Mission> Mission { get; set; }
+        public DbSet<MainContent> MainContent { get; set; }
 
-        public DbSet<Structure> Structure { get; set; }
+        public DbSet<Engine> Engine { get; set; }
+
+        public DbSet<Rocket> Rocket { get; set; }
     }
 }

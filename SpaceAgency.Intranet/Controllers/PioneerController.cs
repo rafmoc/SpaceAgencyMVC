@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SpaceAgency.Data.Data;
 using SpaceAgency.Data.Data.CMS;
+using SpaceAgency.Intranet.TwoViews;
 
 namespace SpaceAgency.Intranet.Controllers
 {
@@ -23,31 +24,31 @@ namespace SpaceAgency.Intranet.Controllers
         // GET: Pioneer
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Pioneer.ToListAsync());
+            var model = new TwoViewsAtOnce()
+            {
+                Pioneers = await _context.Pioneer.ToListAsync()
+            };
+            return View(model);
         }
 
         // GET: Pioneer/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (id is null)
             {
-                return NotFound();
+                return PartialView();
             }
+            var model = new TwoViewsAtOnce();
+            var Pioneer = await _context.Pioneer.FindAsync(id);
+            model.Pioneer = Pioneer;
 
-            var pioneer = await _context.Pioneer
-                .FirstOrDefaultAsync(m => m.IdPioneer == id);
-            if (pioneer == null)
-            {
-                return NotFound();
-            }
-
-            return View(pioneer);
+            return PartialView(model);
         }
 
         // GET: Pioneer/Create
         public IActionResult Create()
         {
-            return View();
+            return PartialView();
         }
 
         // POST: Pioneer/Create
@@ -55,31 +56,28 @@ namespace SpaceAgency.Intranet.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdPioneer,Name,SurName,Status,CurrentPlanet")] Pioneer pioneer)
+        public async Task<IActionResult> Create([Bind("IdPioneer,Name,SurName,Status,CurrentPlanet")] Pioneer Pioneer)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(pioneer);
+                _context.Add(Pioneer);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(pioneer);
+            return RedirectToAction(nameof(Index));
         }
 
-        // GET: Pioneer/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            if (id is null)
             {
-                return NotFound();
+                return PartialView();
             }
+            var model = new TwoViewsAtOnce();
+            var Pioneer = await _context.Pioneer.FindAsync(id);
+            model.Pioneer = Pioneer;
 
-            var pioneer = await _context.Pioneer.FindAsync(id);
-            if (pioneer == null)
-            {
-                return NotFound();
-            }
-            return View(pioneer);
+            return PartialView(model);
         }
 
         // POST: Pioneer/Edit/5
@@ -87,9 +85,9 @@ namespace SpaceAgency.Intranet.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdPioneer,Name,SurName,Status,CurrentPlanet")] Pioneer pioneer)
+        public async Task<IActionResult> Edit(int id, [Bind("IdPioneer,Name,SurName,Status,CurrentPlanet")] Pioneer Pioneer)
         {
-            if (id != pioneer.IdPioneer)
+            if (id != Pioneer.IdPioneer)
             {
                 return NotFound();
             }
@@ -98,12 +96,12 @@ namespace SpaceAgency.Intranet.Controllers
             {
                 try
                 {
-                    _context.Update(pioneer);
+                    _context.Update(Pioneer);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PioneerExists(pioneer.IdPioneer))
+                    if (!PioneerExists(Pioneer.IdPioneer))
                     {
                         return NotFound();
                     }
@@ -114,25 +112,21 @@ namespace SpaceAgency.Intranet.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(pioneer);
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Pioneer/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (id is null)
             {
-                return NotFound();
+                return PartialView();
             }
+            var model = new TwoViewsAtOnce();
+            var Pioneer = await _context.Pioneer.FindAsync(id);
+            model.Pioneer = Pioneer;
 
-            var pioneer = await _context.Pioneer
-                .FirstOrDefaultAsync(m => m.IdPioneer == id);
-            if (pioneer == null)
-            {
-                return NotFound();
-            }
-
-            return View(pioneer);
+            return PartialView(model);
         }
 
         // POST: Pioneer/Delete/5
@@ -140,8 +134,8 @@ namespace SpaceAgency.Intranet.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var pioneer = await _context.Pioneer.FindAsync(id);
-            _context.Pioneer.Remove(pioneer);
+            var Pioneer = await _context.Pioneer.FindAsync(id);
+            _context.Pioneer.Remove(Pioneer);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

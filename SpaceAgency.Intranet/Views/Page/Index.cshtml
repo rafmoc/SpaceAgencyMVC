@@ -1,0 +1,70 @@
+﻿@model SpaceAgency.Intranet.TwoViews.TwoViewsAtOnce
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="content-wrapper">
+  <div class="row">
+
+    <div class="col-lg-8 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="card-title">Pages</h1>
+          <button type="button" onclick="Action(0,'Page','Create')" class="btn btn-inverse-primary btn-fw">Create New</button>
+          <div class="table-responsive">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th>
+                              @Html.DisplayNameFor(model => model.Page.Title)
+                          </th>
+                          <th>
+                              @Html.DisplayNameFor(model => model.Page.Header)
+                          </th>
+                          <th>
+                              @Html.DisplayNameFor(model => model.Page.TopContent)
+                          </th>
+                          <th>
+                              @Html.DisplayNameFor(model => model.Page.BotContent)
+                          </th>
+                          <th></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+              @foreach (var item in Model.Pages) {
+                      <tr>
+                          <td>
+                              @Html.DisplayFor(modelItem => item.Title)
+                          </td>
+                          <td>
+                              @Html.DisplayFor(modelItem => item.Header)
+                          </td>
+                          <td>
+                              @Html.DisplayFor(modelItem => item.TopContent)
+                          </td>
+                          <td>
+                              @Html.DisplayFor(modelItem => item.BotContent)
+                          </td>
+                          <td>
+                              <a class="mdi mdi-information" onclick="Action(@item.IdPage,'Page','Details')"></a> |
+                              <a class="mdi mdi-table-edit" onclick="Action(@item.IdPage,'Page','Edit')"></a> |
+                              <a class="mdi mdi-delete-forever" onclick="Action(@item.IdPage,'Page','Delete')"></a>
+                          </td>
+                      </tr>
+              }
+                  </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 grid-margin stretch-card">
+      <div id="partialView">
+
+      </div>
+    </div>
+
+  </div>
+</div>
+

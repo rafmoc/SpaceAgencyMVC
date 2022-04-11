@@ -31,24 +31,44 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxLZXBsZXJfNjljLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Mission/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxDcmVhdGUuY3NodG1s
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/MainContent/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbkNvbnRlbnRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Mission/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxEZWxldGUuY3NodG1s
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/MainContent/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbkNvbnRlbnRcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Mission/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxEZXRhaWxzLmNzaHRtbA==
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/MainContent/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbkNvbnRlbnRcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Mission/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxFZGl0LmNzaHRtbA==
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/MainContent/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbkNvbnRlbnRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Mission/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxJbmRleC5jc2h0bWw=
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/MainContent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbkNvbnRlbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Page/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Page/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Page/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Page/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Page/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Pioneer/Create.cshtml]
@@ -77,26 +97,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Structure/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RydWN0dXJlXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Structure/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RydWN0dXJlXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Structure/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RydWN0dXJlXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Structure/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RydWN0dXJlXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/Structure/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RydWN0dXJlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.Intranet/Views/_ViewImports.cshtml]

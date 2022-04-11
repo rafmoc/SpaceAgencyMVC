@@ -1,0 +1,64 @@
+﻿@model SpaceAgency.Intranet.TwoViews.TwoViewsAtOnce
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="content-wrapper">
+  <div class="row">
+
+    <div class="col-lg-8 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="card-title">MainContents</h1>
+          <button type="button" onclick="Action(0,'MainContent','Create')" class="btn btn-inverse-primary btn-fw">Create New</button>
+          <div class="table-responsive">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th>
+                              @Html.DisplayNameFor(model => model.MainContent.Icon)
+                          </th>
+                          <th>
+                              @Html.DisplayNameFor(model => model.MainContent.Header)
+                          </th>
+                          <th>
+                              @Html.DisplayNameFor(model => model.MainContent.Content)
+                          </th>
+                          <th></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+              @foreach (var item in Model.MainContents) {
+                      <tr>
+                          <td>
+                              @Html.DisplayFor(modelItem => item.Icon)
+                          </td>
+                          <td>
+                              @Html.DisplayFor(modelItem => item.Header)
+                          </td>
+                          <td>
+                              @Html.DisplayFor(modelItem => item.Content)
+                          </td>
+                          <td>
+                              <a class="mdi mdi-information" onclick="Action(@item.IdMainContent,'MainContent','Details')"></a> |
+                              <a class="mdi mdi-table-edit" onclick="Action(@item.IdMainContent,'MainContent','Edit')"></a> |
+                              <a class="mdi mdi-delete-forever" onclick="Action(@item.IdMainContent,'MainContent','Delete')"></a>
+                          </td>
+                      </tr>
+              }
+                  </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 grid-margin stretch-card">
+      <div id="partialView">
+
+      </div>
+    </div>
+
+  </div>
+</div>
+

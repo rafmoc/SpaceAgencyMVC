@@ -1,0 +1,36 @@
+﻿@model SpaceAgency.Intranet.TwoViews.TwoViewsAtOnce
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h1>Details</h1>
+
+        <div>
+            <h4>MainContent</h4>
+            <hr />
+            <dl class="row">
+                <dt class = "col-sm-4">
+                    @Html.DisplayNameFor(model => model.MainContent.Icon)
+                </dt>
+                <dd class = "col-sm-8">
+                    @Html.DisplayFor(model => model.MainContent.Icon)
+                </dd>
+                <dt class = "col-sm-4">
+                    @Html.DisplayNameFor(model => model.MainContent.Header)
+                </dt>
+                <dd class = "col-sm-8">
+                    @Html.DisplayFor(model => model.MainContent.Header)
+                </dd>
+                <dt class = "col-sm-4">
+                    @Html.DisplayNameFor(model => model.MainContent.Content)
+                </dt>
+                <dd class = "col-sm-8">
+                    @Html.DisplayFor(model => model.MainContent.Content)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>

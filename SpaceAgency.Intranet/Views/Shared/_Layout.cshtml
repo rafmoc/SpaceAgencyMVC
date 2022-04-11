@@ -64,9 +64,9 @@
             </a>
             <div class="collapse" id="DataEdit">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="@Url.ActionLink("Index", "Mission")">Mission</a></li>
+                <li class="nav-item"> <a class="nav-link" href="@Url.ActionLink("Index", "Page")">Page</a></li>
                 <li class="nav-item"> <a class="nav-link" href="@Url.ActionLink("Index", "Pioneer")">Pioneer</a></li>
-                <li class="nav-item"> <a class="nav-link" href="@Url.ActionLink("Index", "Structure")">Structure</a></li>
+                <li class="nav-item"> <a class="nav-link" href="@Url.ActionLink("Index", "MainContent")">Main Content</a></li>
               </ul>
             </div>
           </li>
@@ -131,6 +131,7 @@
     <!-- Custom js for this page -->
     <script src="~/assets/js/dashboard.js"></script>
     <script src="~/assets/js/chart.js"></script>
+    <script src="~/js/site.js"></script>
     <!-- End custom js for this page -->
     @await RenderSectionAsync("Scripts", required: false)
 </body>

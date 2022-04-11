@@ -1,53 +1,70 @@
-﻿@model IEnumerable<SpaceAgency.Data.Data.CMS.Pioneer>
+﻿@model SpaceAgency.Intranet.TwoViews.TwoViewsAtOnce
 
 @{
     ViewData["Title"] = "Index";
 }
+<div class="content-wrapper">
+  <div class="row">
 
-<h1>Index</h1>
+    <div class="col-lg-8 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="card-title">Pioneers</h1>
+          <button type="button" onclick="Action(0,'Pioneer','Create')" class="btn btn-inverse-primary btn-fw">Create New</button>
+          <div class="table-responsive">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th>
+                              @Html.DisplayNameFor(model => model.Pioneer.Name)
+                          </th>
+                          <th>
+                              @Html.DisplayNameFor(model => model.Pioneer.SurName)
+                          </th>
+                          <th>
+                              @Html.DisplayNameFor(model => model.Pioneer.Status)
+                          </th>
+                          <th>
+                              @Html.DisplayNameFor(model => model.Pioneer.CurrentPlanet)
+                          </th>
+                          <th></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+              @foreach (var item in Model.Pioneers) {
+                      <tr>
+                          <td>
+                              @Html.DisplayFor(modelItem => item.Name)
+                          </td>
+                          <td>
+                              @Html.DisplayFor(modelItem => item.SurName)
+                          </td>
+                          <td>
+                              @Html.DisplayFor(modelItem => item.Status)
+                          </td>
+                          <td>
+                              @Html.DisplayFor(modelItem => item.CurrentPlanet)
+                          </td>
+                          <td>
+                              <a class="mdi mdi-information" onclick="Action(@item.IdPioneer,'Pioneer','Details')"></a> |
+                              <a class="mdi mdi-table-edit" onclick="Action(@item.IdPioneer,'Pioneer','Edit')"></a> |
+                              <a class="mdi mdi-delete-forever" onclick="Action(@item.IdPioneer,'Pioneer','Delete')"></a>
+                          </td>
+                      </tr>
+              }
+                  </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SurName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CurrentPlanet)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SurName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CurrentPlanet)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdPioneer">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdPioneer">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdPioneer">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <div class="col-lg-4 grid-margin stretch-card">
+      <div id="partialView">
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
