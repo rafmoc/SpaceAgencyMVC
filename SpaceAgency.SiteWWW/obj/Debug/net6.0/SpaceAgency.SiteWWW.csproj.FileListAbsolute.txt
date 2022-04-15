@@ -526,3 +526,8 @@ C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.SiteWWW\bin\Debug\net6.0\ru
 C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.SiteWWW\bin\Debug\net6.0\SpaceAgency.Data.dll
 C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.SiteWWW\bin\Debug\net6.0\SpaceAgency.Data.pdb
 C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.SiteWWW\obj\Debug\net6.0\SpaceAgency.SiteWWW.csproj.CopyComplete
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.SiteWWW\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.SiteWWW\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.SiteWWW\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.SiteWWW\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\asus\Desktop\Studia\SpaceAgency\SpaceAgency.SiteWWW\obj\Debug\net6.0\SpaceAgency.SiteWWW.MvcApplicationPartsAssemblyInfo.cs

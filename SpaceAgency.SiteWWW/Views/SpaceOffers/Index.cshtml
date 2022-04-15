@@ -1,0 +1,28 @@
+﻿@model IEnumerable<SpaceAgency.Data.Data.Rockets.Engine>
+@{
+    ViewData["Title"] = "Rockets";
+    Layout = "~/Views/Shared/_SpaceOffersLayout.cshtml";
+}
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Silnik</th>
+                <th>Silnik</th>
+                <th>Silnik</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var engine in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.ActionLink(engine.Name, "MoreInfo", "SpaceOffers", new {id=engine.IdEngine}, null)
+                    </td>
+                    <td>@engine.Model</td>
+                    <td>@engine.Stage</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

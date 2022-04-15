@@ -1,12 +1,11 @@
-﻿@model IEnumerable<SpaceAgency.Data.Data.CMS.Page>
+﻿@model IEnumerable<SpaceAgency.Data.Data.Rockets.Rocket>
 
 <a id="logo-container" href="#" class="brand-logo">EasySpaceSpeed</a>
 <ul class="right hide-on-med-and-down">
     @foreach(var item in Model)
     {
-        <li>@Html.ActionLink(item.Header, "Index", "Home", new {id = item.IdPage}, null)</li>
+        <li>@Html.ActionLink(item.Name, "Index", "SpaceOffers", new {id = item.IdRocket}, null)</li>
     }
-    <li>@Html.ActionLink("Space Travel", "Index", "SpaceOffers")</li>
 </ul>
 
 <ul id="nav-mobile" class="sidenav">

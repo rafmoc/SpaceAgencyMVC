@@ -1,14 +1,19 @@
-29:00 - robimy nowy layout
+22:00 - robimy nowy layout
 29:30 - dodajemy controler
-36:30 - viewbag do pobrania <- tu skończyłem
 55:17 - SklepController skończony kod
 56:45 - nowe view. Robimy widok sklepu. <- tu pokazane jak kliknąć
+
+01:19:00 - działa przed przerwą.
+01:34:12 - koniec przerwy - będziemy dodawać wyświetlanie towarów.
 
 01:46:10 - "działa. wszystko działa". Przykład jak powinno wyglądać.
 01:54:00 - Audytowanie Allegro.
 
+02:00:00 - dodajemy bajery (szczegóły towaru)
 02:14:20 - działa z bajerami.
 
 Dobre przykłady pod materialize:
 http://stephaniejagiello.com/
 https://adbeus.com/
+
+skończyłem na 02:00
