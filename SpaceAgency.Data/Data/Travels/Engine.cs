@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SpaceAgency.Data.Data.Rockets
+namespace SpaceAgency.Data.Data.Travels
 {
     public class Engine
     {

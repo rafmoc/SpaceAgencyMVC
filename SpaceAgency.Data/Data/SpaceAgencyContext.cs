@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SpaceAgency.Data.Data.CMS;
-using SpaceAgency.Data.Data.Rockets;
+using SpaceAgency.Data.Data.Travels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
