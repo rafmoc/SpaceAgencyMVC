@@ -22,8 +22,8 @@ namespace SpaceAgency.Data.Data
 
         public DbSet<MainContent> MainContent { get; set; }
 
-        public DbSet<Engine> Engine { get; set; }
+        public DbSet<Travel> Travel { get; set; }
 
-        public DbSet<Rocket> Rocket { get; set; }
+        public DbSet<Planet> Planet { get; set; }
     }
 }

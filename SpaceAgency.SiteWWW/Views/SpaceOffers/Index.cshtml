@@ -1,28 +1,25 @@
-﻿@model IEnumerable<SpaceAgency.Data.Data.Travels.Engine>
+﻿@model IEnumerable<SpaceAgency.Data.Data.Travels.Travel>
 @{
     ViewData["Title"] = "Rockets";
     Layout = "~/Views/Shared/_SpaceOffersLayout.cshtml";
 }
 <div>
-    <table>
-        <thead>
-            <tr>
-                <th>Silnik</th>
-                <th>Silnik</th>
-                <th>Silnik</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach(var engine in Model)
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <ul class="collection">
+            @foreach(var travel in Model)
             {
-                <tr>
-                    <td>
-                        @Html.ActionLink(engine.Name, "MoreInfo", "SpaceOffers", new {id=engine.IdEngine}, null)
-                    </td>
-                    <td>@engine.Model</td>
-                    <td>@engine.Stage</td>
-                </tr>
+                <li class="collection-item avatar">
+                  <img src= @( "/" + travel.Planet.Name + ".jpg") alt="" class="circle">
+                  <span class="title">@Html.ActionLink(travel.Name, "MoreInfo", "SpaceOffers", new {id=travel.IdTravel}, null)</span>
+                  <p>Seats - @travel.Seats <br>
+                     Time off Earth - @travel.TimeOffEarth
+                  </p>
+                </li>
             }
-        </tbody>
-    </table>
+        </ul>
+        <br><br>
+      </div>
+    </div>
 </div>

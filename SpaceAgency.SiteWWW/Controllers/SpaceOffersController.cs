@@ -15,21 +15,21 @@ namespace SpaceAgency.SiteWWW.Controllers
 
         public async Task<IActionResult> Index(int? id)
         {
-            ViewBag.ModelRockets = await _context.Rocket.ToListAsync();
+            ViewBag.ModelRockets = await _context.Planet.ToListAsync();
 
             if (id == null)
             {
-                var first = await _context.Rocket.FirstAsync();
-                id = first.IdRocket;
+                var first = await _context.Planet.FirstAsync();
+                id = first.IdPlanet;
             }
 
-            return View(await _context.Engine.Where(t => t.IdRocket == id).ToListAsync());
+            return View(await _context.Travel.Where(t => t.IdRocket == id).ToListAsync());
         }
 
         public async Task<IActionResult> MoreInfo(int? id)
         {
-            ViewBag.ModelRockets = await _context.Rocket.ToListAsync();
-            return View(await _context.Engine.Where(t => t.IdEngine == id).FirstOrDefaultAsync());
+            ViewBag.ModelRockets = await _context.Planet.ToListAsync();
+            return View(await _context.Travel.Where(t => t.IdTravel == id).FirstOrDefaultAsync());
         }
     }
 }

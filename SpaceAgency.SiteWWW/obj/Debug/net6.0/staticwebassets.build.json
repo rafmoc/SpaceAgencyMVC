@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6rK2eYq3crg18/bv8xEAcSfwpEomJC4Q7b+wXR28LnY=",
+  "Hash": "yzv/siB1mRDcNREtK/IFSKzglo8WMMT2NPxAq50B3VY=",
   "Source": "SpaceAgency.SiteWWW",
   "BasePath": "_content/SpaceAgency.SiteWWW",
   "Mode": "Default",
@@ -204,12 +204,12 @@
       "OriginalItemSpec": "wwwroot\\js\\materialize.min.js"
     },
     {
-      "Identity": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\KEPLER_22B.jpg",
+      "Identity": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\Kepler_22B.jpg",
       "SourceId": "SpaceAgency.SiteWWW",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\",
       "BasePath": "_content/SpaceAgency.SiteWWW",
-      "RelativePath": "KEPLER_22B.jpg",
+      "RelativePath": "Kepler_22B.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -218,7 +218,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\KEPLER_22B.jpg"
+      "OriginalItemSpec": "wwwroot\\Kepler_22B.jpg"
     },
     {
       "Identity": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\Kepler-69c.jpg",

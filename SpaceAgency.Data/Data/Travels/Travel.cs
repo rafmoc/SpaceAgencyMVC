@@ -7,24 +7,24 @@ using System.Threading.Tasks;
 
 namespace SpaceAgency.Data.Data.Travels
 {
-    public class Engine
+    public class Travel
     {
         [Key]
-        public int IdEngine { get; set; }
+        public int IdTravel { get; set; }
 
         [Required(ErrorMessage = "Please write the Name")]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Please write the Model")]
-        public string Model { get; set; }
-
         [Required(ErrorMessage = "Please write the Type")]
         public string Type { get; set; }
 
-        [Required(ErrorMessage = "Please write the Stage")]
-        public string Stage { get; set; }
+        [Required(ErrorMessage = "Please write the Time Off Earth")]
+        public string TimeOffEarth { get; set; }
+
+        [Required(ErrorMessage = "Please write the Seats")]
+        public string Seats { get; set; }
 
         public int IdRocket { get; set; }
-        public Rocket Rocket { get; set; }
+        public Planet Planet { get; set; }
     }
 }
