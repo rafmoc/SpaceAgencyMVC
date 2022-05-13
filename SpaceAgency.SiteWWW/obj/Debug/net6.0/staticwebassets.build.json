@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yzv/siB1mRDcNREtK/IFSKzglo8WMMT2NPxAq50B3VY=",
+  "Hash": "mJMO4LYQfk7wFBPbA25F5uc1s4IdoMAjfFcblzCTamI=",
   "Source": "SpaceAgency.SiteWWW",
   "BasePath": "_content/SpaceAgency.SiteWWW",
   "Mode": "Default",
@@ -153,6 +153,23 @@
       "OriginalItemSpec": "wwwroot\\Gliese_667Cc.jpg"
     },
     {
+      "Identity": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\Gliese_667Cc.png",
+      "SourceId": "SpaceAgency.SiteWWW",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\",
+      "BasePath": "_content/SpaceAgency.SiteWWW",
+      "RelativePath": "Gliese_667Cc.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Gliese_667Cc.png"
+    },
+    {
       "Identity": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\js\\init.js",
       "SourceId": "SpaceAgency.SiteWWW",
       "SourceType": "Discovered",
@@ -221,6 +238,23 @@
       "OriginalItemSpec": "wwwroot\\Kepler_22B.jpg"
     },
     {
+      "Identity": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\Kepler_22B.png",
+      "SourceId": "SpaceAgency.SiteWWW",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\",
+      "BasePath": "_content/SpaceAgency.SiteWWW",
+      "RelativePath": "Kepler_22B.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Kepler_22B.png"
+    },
+    {
       "Identity": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\Kepler-69c.jpg",
       "SourceId": "SpaceAgency.SiteWWW",
       "SourceType": "Discovered",
@@ -236,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Kepler-69c.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\Kepler-69c.png",
+      "SourceId": "SpaceAgency.SiteWWW",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\",
+      "BasePath": "_content/SpaceAgency.SiteWWW",
+      "RelativePath": "Kepler-69c.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Kepler-69c.png"
     },
     {
       "Identity": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -1307,6 +1358,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\materialize\\README.md"
+    },
+    {
+      "Identity": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\Space.jpg",
+      "SourceId": "SpaceAgency.SiteWWW",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\",
+      "BasePath": "_content/SpaceAgency.SiteWWW",
+      "RelativePath": "Space.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Space.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\window_transparent.png",
+      "SourceId": "SpaceAgency.SiteWWW",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rafmoc\\Desktop\\SpaceAgencyMVC\\SpaceAgencyMVC\\SpaceAgency.SiteWWW\\wwwroot\\",
+      "BasePath": "_content/SpaceAgency.SiteWWW",
+      "RelativePath": "window_transparent.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\window_transparent.png"
     }
   ]
 }

@@ -3,7 +3,10 @@
     ViewData["Title"] = "MoreInfo";
     Layout = "~/Views/Shared/_SpaceOffersLayout.cshtml";
 }
-<div class="container blue lighten-5">
+
+<div id="index-banner" class="parallax-container">
+
+<div class="container">
   <div class="row">
     <div class="col s12">
       <h1 class="center-align">@Model.Name</h1>
@@ -11,30 +14,19 @@
   </div>
 </div>
 
-<div class="container grey lighten-4">
-  <div class="row">
-  
-    <div class="col s6">
-      <div class="right-align"> <img src= @( "/" + Model.Planet.Name + ".jpg") alt="" class="poster"> </div>
-    </div>
+<div class="container">
+    <div class="row">
     
-    <div class="col s6">
-      <div class="section no-pad-bot">
-        <div class="container">
-          <h3 class="title">@Model.Name</h3>
-          <h5>Destination - @Model.Planet.Name <br>
-             Type - @Model.Type <br>
-             Seats - @Model.Seats <br>
-             Time off Earth - @Model.TimeOffEarth
-          </h5>
-          <h3 class="title">About @Model.Planet.Name</h3>
-          <h5>Type - @Model.Planet.Type <br>
-             Security Level - @Model.Planet.SecurityLevel <br>
-             Status - @Model.Planet.Status
-          </h5>
-        </div>
+      <div class="col s7">
+        <div class="center-align"> <img src= @( "/" + Model.Planet.Name + ".png") alt="" class="poster"> </div>
       </div>
+      
+      <div class="col s5">
+      @{await Html.RenderPartialAsync("MoreInfoData");}
+      </div>
+    
     </div>
+</div>
 
-  </div>
+<div class="parallax"><img src="~/Space.jpg" alt=""></div>
 </div>

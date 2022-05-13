@@ -4,15 +4,28 @@
     Layout = "~/Views/Shared/_SpaceOffersLayout.cshtml";
 }
 <div>
-    <div class="section no-pad-bot">
+    <div class="section">
+      <br><br>
+      <div class="center-align">
+          <div id="index-banner" class="parallax-container">
+              <div class="container">
+                  @foreach(var travel in Model)
+                  {
+                      <img src= @( "/" + travel.Planet.Name + ".png") alt="">
+                      break;
+                  }
+              </div>
+          <div class="parallax"><img src="~/Space.jpg" alt="Unsplashed background img 1"></div>
+          </div>
+      </div>
       <div class="container">
-        <br><br>
+        <br>
         <ul class="collection">
             @foreach(var travel in Model)
             {
-                <li class="collection-item avatar">
+                <li class="collection-item avatar hoverable light-blue lighten-5">
                   <img src= @( "/" + travel.Planet.Name + ".jpg") alt="" class="circle">
-                  <span class="title">@Html.ActionLink(travel.Name, "MoreInfo", "SpaceOffers", new {id=travel.IdTravel}, null)</span>
+                  <span class="title hoverable">@Html.ActionLink(travel.Name, "MoreInfo", "SpaceOffers", new {id=travel.IdTravel}, null)</span>
                   <p>Seats - @travel.Seats <br>
                      Time off Earth - @travel.TimeOffEarth
                   </p>

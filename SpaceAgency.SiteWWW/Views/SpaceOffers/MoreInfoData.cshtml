@@ -1,0 +1,29 @@
+﻿@model SpaceAgency.Data.Data.Travels.Travel
+@{
+    ViewData["Title"] = "MoreInfoData";
+}
+
+<div class="col s12 m12 l1">
+   <img src="~/window_transparent.png" alt="">
+</div>
+
+<div class="col s12 m12 l11">
+
+    <div class="section blue-text text-darken-1">
+      <div class="container">
+        <h3 class="title">@Model.Name</h3>
+        <h5>Destination - @Model.Planet.Name <br>
+           Type - @Model.Type <br>
+           Seats - @Model.Seats <br>
+           Time off Earth - @Model.TimeOffEarth
+        </h5>
+        <h3 class="title">About @Model.Planet.Name</h3>
+        <h5>Type - @Model.Planet.Type <br>
+           Security Level - @Model.Planet.SecurityLevel <br>
+           Status - @Model.Planet.Status
+           <br><br><br><br><br>
+        </h5>
+      </div>
+    </div>
+
+</div>
