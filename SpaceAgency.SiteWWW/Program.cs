@@ -9,6 +9,14 @@ builder.Services.AddDbContext<SpaceAgencyContext>(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//START
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromSeconds(40);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+//STOP
 
 var app = builder.Build();
 
@@ -24,6 +32,10 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+//START
+app.UseSession();
+//STOP
+
 
 app.UseAuthorization();
 

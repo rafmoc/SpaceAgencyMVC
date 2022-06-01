@@ -21,8 +21,13 @@
         <h5>Type - @Model.Planet.Type <br>
            Security Level - @Model.Planet.SecurityLevel <br>
            Status - @Model.Planet.Status
-           <br><br><br><br><br>
+           <br>
         </h5>
+        <a asp-action="AddToOrder" asp-controller="TravelOrder" asp-route-id="@Model.IdTravel" 
+            class="btn waves-effect waves-light" type="submit">Buy a Ticket
+            <i class="material-icons right">send</i>
+        </a>
+        <br><br><br>
       </div>
     </div>
 

@@ -51,6 +51,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TcGFjZU9mZmVyc0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.SiteWWW/Views/Shared/_TravelOrderLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UcmF2ZWxPcmRlckxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.SiteWWW/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -65,6 +69,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.SiteWWW/Views/SpaceOffers/MoreInfoData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BhY2VPZmZlcnNcTW9yZUluZm9EYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.SiteWWW/Views/TravelOrder/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhdmVsT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Rafmoc/Desktop/SpaceAgencyMVC/SpaceAgencyMVC/SpaceAgency.SiteWWW/Views/_ViewImports.cshtml]

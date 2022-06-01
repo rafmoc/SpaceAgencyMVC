@@ -25,5 +25,7 @@ namespace SpaceAgency.Data.Data
         public DbSet<Travel> Travel { get; set; }
 
         public DbSet<Planet> Planet { get; set; }
+
+        public DbSet<TravelOrder> TravelOrder { get; set; }
     }
 }

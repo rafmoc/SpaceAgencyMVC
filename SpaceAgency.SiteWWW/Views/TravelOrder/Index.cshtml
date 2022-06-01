@@ -1,0 +1,37 @@
+﻿@model SpaceAgency.SiteWWW.Models.TravelOrders.DataToOrder
+@{
+    ViewData["Title"] = "Travels";
+    Layout = "~/Views/Shared/_TravelOrderLayout.cshtml";
+}
+
+<div>
+    <div class="section">
+      <br><br>
+      <div class="center-align">
+          <div id="index-banner" class="parallax-container">
+              <div class="container">
+                  <img src= @( "/blackRocket.png") alt="">
+              </div>
+          <div class="parallax"><img src="~/Space.jpg" alt="Unsplashed background img 1"></div>
+          </div>
+      </div>
+      <div class="container">
+        <br>
+        <ul class="collection">
+            @foreach(var travel in Model.TravelOrders)
+            {
+                <li class="collection-item avatar hoverable light-blue lighten-5">
+                  <img src= @( "/" + travel.Travel.Planet.Name + ".jpg") alt="" class="circle">
+                  <span class="title hoverable">@Html.ActionLink(travel.Travel.Name, "MoreInfo", "SpaceOffers", new {id=travel.IdTravel}, null)</span>
+                  <p>Seats - @travel.Seats <br>
+                     Time off Earth - @travel.Travel.TimeOffEarth
+                  </p>
+                  <a asp-action="AddToOrder" asp-controller="TravelOrder" asp-route-id="@travel.IdTravel" class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">add</i></a>
+                  <a asp-action="RemoveFromOrder" asp-controller="TravelOrder" asp-route-id="@travel.IdTravel" class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">remove</i></a>
+                </li>
+            }
+        </ul>
+        <br><br>
+      </div>
+    </div>
+</div>
